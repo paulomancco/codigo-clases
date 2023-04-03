@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <h1>Imagenes en HTML</h1>
+    </header>
+    <main>
+      <h2>Usando la etiqueta IMG</h2>
+      <section>
+        <!-- src, donde esta la imagen// alt, texto en caso la imagen no se encuentre -->
+        <img src="https://placehold.jp/200x200.png" alt="Imagen de ejemplo" />
+      </section>
+      <section>
+        <img src="./Dinosaurio.jpg" alt="" width="200" height="200" />
+      </section>
+      <section>
+        <img src="./Imagenes/Noticia.jpg" alt="" width="200" height="200" />
+      </section>
+      <!-- en imagenes ./ es entrar a una carpeta ../ un directorio atras -->
+      <section>
+        <img
+          src="../Fotos/Avatar/Retrato.jpg"
+          alt=""
+          width="200"
+          height="200"
+        />
+      </section>
+      <!-- etiquetas bloqueantes: por defecto ocupan el 100% del ancho de la pantalla -->
+      <!-- etiquetas en linea: por defecto ocupan solo el ancho del mismo elemento  -->
+      <section>
+        <img src="./Dinosaurio.jpg" alt="" width="100" height="100" />
+        <img
+          src="../Fotos/Avatar/Retrato.jpg"
+          alt=""
+          width="100"
+          height="100"
+        />
+        <article> <img src="./Dinosaurio.jpg" alt=""width="100" height="100"></article>
+      </section>
+      <section>
+        <figure>
+            <img src="./Imagenes/Noticia.jpg" alt=""width="100" height="100">
+            <figcaption>Paulo Cesar</figcaption>
+        </figure>
+      </section>
+    </main>
+  </body>
+</html>

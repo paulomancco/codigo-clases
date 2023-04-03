@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        background-color: #444;
+        color: #eee;
+        font-family: sans-serif;
+      }
+      code {
+        font-family: consolas;
+        color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Tablas</h1>
+    </header>
+    <main>
+      <section>
+        <h2>Filas y Columnas</h2>
+        <p>Las tablas se colocan dentro de una etiqueta <code>table</code></p>
+        <p>Las tablas tienen 3 partes</p>
+        <ul>
+          <li><code>thead</code>: Cabecera</li>
+          <li><code>tbody</code>: Cuerpo</li>
+          <li><code>tfoot</code>: Pie de tabla</li>
+        </ul>
+      </section>
+      <!-- <br/> salto de Linea-->
+      <!-- <hr/> linea de division -->
+      <hr />
+      <section>
+        <h2>Tabla simple</h2>
+        <table border="1">
+          <thead>
+            <tr>
+              <th>Cantidad</th>
+              <th>Descripción</th>
+              <th>P. Unitario</th>
+              <th>Total</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>2</td>
+              <td>Teclados mecánicos Fanatic Vanquish</td>
+              <td>S/. 200.00</td>
+              <td>S/. 400.00</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>Monitor Widescreen</td>
+              <td>S/. 800.00</td>
+              <td>S/. 800.00</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>Mouse Hyperk</td>
+              <td>S/. 180.00</td>
+              <td>S/. 180.00</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="3" align="center">TOTAL</td>
+              <td>S/. 1'380.00</td>
+            </tr>
+          </tfoot>
+        </table>
+      </section>
+      <hr />
+      <section>
+        <h2>Combinando Filas</h2>
+        <p>Para combinar filas se usa el atributo <code>rowspan</code></p>
+        <table border="1">
+          <thead>
+            <tr>
+              <th>Categoria</th>
+              <th>Etiquetas</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- tr*16>td{izquierda}+td{derecha} -->
+            <tr>
+              <td rowspan="5">izquierda</td>
+              <td>Form</td>
+            </tr>
+            <tr>
+              <td>button</td>
+            </tr>
+            <tr>
+              <td>input</td>
+            </tr>
+            <tr>
+              <td>select</td>
+            </tr>
+            <tr>
+              <td>derecha</td>
+            </tr>
+            <tr>
+              <td rowspan="5">izquierda</td>
+              <td>derecha</td>
+            </tr>
+            <tr>
+              <td>derecha</td>
+            </tr>
+            <tr>
+              <td>derecha</td>
+            </tr>
+            <tr>
+              <td>derecha</td>
+            </tr>
+            <tr>
+              <td>derecha</td>
+            </tr>
+            <tr>
+              <td rowspan="6">Texto</td>
+              <td>b</td>
+            </tr>
+            <tr>
+              <td>em</td>
+            </tr>
+            <tr>
+              <td>i</td>
+            </tr>
+            <tr>
+              <td>strong</td>
+            </tr>
+            <tr>
+              <td>sub</td>
+            </tr>
+            <tr>
+              <td>sup</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <hr />
+      <section>
+        <h2>Ejercicio</h2>
+        <p>Ejercicio para demostrar el uso de tablas</p>
+        <table border="1">
+          <tbody>
+            <tr>
+              <td rowspan="5">Supermercados <br> "La vendedora</td>
+              <td></td>
+              <td align="center">25/04/2011</td>
+            </tr>
+            <tr>
+              <td colspan="2" align="center">N° Fra.: 2456/00</td>
+            </tr>
+            <tr>
+              <td>cliente</td>
+              <td rowspan="3">
+                Juan Francisco Redrovan<br />
+                1804562738 <br />Ambato, Av. Cevallos
+              </td>
+            </tr>
+            <tr>
+              <td>RUC:</td>
+            </tr>
+            <tr>
+              <td>Dirección:</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+  </body>
+</html>
