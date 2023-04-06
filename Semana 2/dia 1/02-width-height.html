@@ -1,29 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-        *{
-            margin: 0;
-            padding: 0;
-        }
-        .caja-1{
-            border: 1px solid red;
-            width: 200px;
-            height: 100px;
-        }
-        .span-1{
-            border: 1px solid blue;
-            width: 200px;
-            height: 200px;
-        }
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: #ccc;
+        border: 1px solid peru;
+      }
+      .caja-1 {
+        border: 1px solid red;
+        width: 200px;
+        height: 100px;
+        /* overflow: hidden;*/
+        overflow-y: hidden;
+        overflow-x: scroll;
+        /* word-wap va a romper la palabra si es muy grande */
+        /* word-wrap: break-word;  */
+      }
+      .span-1 {
+        border: 1px solid blue;
+        width: 200px;
+        height: 200px;
+      }
+      .caja-2 {
+        border: 1px solid white;
+        height: 100px;
+        width: 200px;
+        overflow-x: scroll;
+      }
+      .parrafo-grande {
+        width: 300px;
+      }
     </style>
-</head>
-<body>
-    <div class="caja-1">algo de contenido</div>
+  </head>
+  <body>
+    <div class="caja-1">
+      algo de cont Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex,
+      ab molestiae labore numquam qui unde consequatur! Officia quas laudantium
+      non aut, nemo sed enim perferendis minima quos ad, id dignissimos.
+    </div>
     <span class="span-1">un span</span>
-</body>
+    <div class="caja-2">
+      <p class="parrafo-grande">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque tempora
+        saepe necessitatibus dolor, reiciendis voluptatum similique nemo
+        perspiciatis quo repellat explicabo maxime eum aliquam quam cumque animi
+        fugit, quia totam!
+      </p>
+    </div>
+  </body>
 </html>
